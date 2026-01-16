@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Test Identity Selector",
+    "version": "0.1.0",
+    "description": "Internal test-only extension to select test identities in login flows.",
+    "action": {
+        "default_title": "Test Identity Selector",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "scripting"]
+}
