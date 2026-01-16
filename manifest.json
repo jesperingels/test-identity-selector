@@ -5,7 +5,7 @@
     "description": "Internal test-only extension to select test identities in login flows.",
     "action": {
         "default_title": "Test Identity Selector",
-        "default_popup": "popup.html"
+        "default_popup": "popup/popup.html"
     },
     "permissions": ["activeTab", "scripting", "storage"]
 }

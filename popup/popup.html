@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Test Identity Selector</title>
-        <link rel="stylesheet" href="popup.css" />
+        <link rel="stylesheet" href="./popup.css" />
     </head>
     <body>
         <main class="container">
@@ -21,7 +21,7 @@
                     Selecteer gebruiker
                 </button>
             </form>
-            <div id="status" class="status" role="status"></div>
+            <output id="status" class="status"></output>
 
             <section
                 id="results-section"
@@ -51,6 +51,6 @@
                 <ul id="favorites-list" class="list"></ul>
             </section>
         </main>
-        <script src="popup.js"></script>
+        <script type="module" src="./popup.js"></script>
     </body>
 </html>

@@ -59,9 +59,16 @@ Als de dropdown een andere class heeft, wordt er geen match gevonden.
 ## Bestanden
 
 -   `manifest.json` — MV3 manifest en permissies.
--   `popup.html` — UI van de popup (inclusief resultatenlijst, recent en favorieten secties).
--   `popup.js` — logica voor selectie, meerdere matches, opslag en statusmeldingen.
--   `popup.css` — styling van de popup en lijsten.
+-   `popup/popup.html` — UI van de popup (inclusief resultatenlijst, recent en favorieten secties).
+-   `popup/popup.js` — entrypoint dat de modules aan elkaar koppelt.
+-   `popup/dom.js` — centrale DOM-refs voor de popup.
+-   `popup/status.js` — helper om statusmeldingen te tonen.
+-   `popup/state.js` — opslag van recent en favorieten via `chrome.storage`.
+-   `popup/content-scripts.js` — scripts die in de actieve tab worden uitgevoerd.
+-   `popup/render.js` — renderen van resultaten, recent en favorieten.
+-   `popup/selection.js` — selectieflow en foutafhandeling.
+-   `popup/keyboard.js` — toetsenbordnavigatie in de resultatenlijst.
+-   `popup/popup.css` — styling van de popup en lijsten.
 
 ## Permissions
 
