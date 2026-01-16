@@ -22,6 +22,34 @@
                 </button>
             </form>
             <div id="status" class="status" role="status"></div>
+
+            <section
+                id="results-section"
+                class="results-section"
+                style="display: none"
+            >
+                <h2 class="section-title">Resultaten</h2>
+                <ul id="results-list" class="list"></ul>
+            </section>
+
+            <section id="recent-section" class="recent-section">
+                <div class="section-header">
+                    <h2 class="section-title">Recent</h2>
+                    <button
+                        id="clear-recent"
+                        class="clear-button"
+                        type="button"
+                    >
+                        Wissen
+                    </button>
+                </div>
+                <ul id="recent-list" class="list"></ul>
+            </section>
+
+            <section id="favorites-section" class="favorites-section">
+                <h2 class="section-title">Favorieten</h2>
+                <ul id="favorites-list" class="list"></ul>
+            </section>
         </main>
         <script src="popup.js"></script>
     </body>

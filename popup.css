@@ -2,6 +2,8 @@
     font-family: Arial, sans-serif;
     padding: 12px;
     width: 300px;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 .title {
@@ -53,4 +55,106 @@
 
 .status.error {
     color: #b00020;
+}
+
+.section-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 12px 0 6px 0;
+    color: #444444;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 6px 0;
+}
+
+.section-header .section-title {
+    margin: 0;
+}
+
+.clear-button {
+    font-size: 11px;
+    padding: 4px 8px;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #444444;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background: #f5f5f5;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 8px;
+    margin: 2px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    background: #f9f9f9;
+    border: 1px solid transparent;
+}
+
+.list-item:hover {
+    background: #f0f0f0;
+    border-color: #c7c7c7;
+}
+
+.list-item.highlighted {
+    background: #e3f2fd;
+    border-color: #1a73e8;
+}
+
+.list-item-name {
+    flex: 1;
+    color: #333333;
+}
+
+.list-item-actions {
+    display: flex;
+    gap: 4px;
+    margin-left: 8px;
+}
+
+.favorite-button {
+    font-size: 11px;
+    padding: 2px 6px;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+    color: #666666;
+    cursor: pointer;
+}
+
+.favorite-button:hover {
+    background: #f0f0f0;
+}
+
+.favorite-button.favorited {
+    color: #ff9800;
+}
+
+.favorite-button.favorited::before {
+    content: "★ ";
+}
+
+.favorite-button:not(.favorited)::before {
+    content: "☆ ";
+}
+
+.results-section {
+    margin-top: 8px;
 }
